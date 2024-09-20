@@ -68,7 +68,7 @@ function Work() {
         <section id="work" className="section text-black py-12">
             <div className="container mx-auto">
                 {/* Section Title */}
-                <div className="text-center mb-1">
+                <div className="text-center mb-1 mt-14">
                     <h2 className="md: text-3xl text-pink-600 font-semibold mb-1 mt-8 pb-2 sm:text-3xl mobile:text-[23px]">My Latest Work & Skills</h2>
                     <div className="flex justify-center items-center">
                         <div className="w-[600px] h-[3px] bg-yellow-400 text-center mb-3"></div>
@@ -113,11 +113,11 @@ function Work() {
                 <h1 className=" md:text-center text-pink-600 md: text-3xl font-semibold pt-8 sm:text-2xl mobile:text-[24px] ml-7 mobile:mb-2">My Latest Projects</h1>
                 {/* line */}
                 <div className="flex justify-center items-center">
-                    <div className="w-[600px] h-[3px] bg-yellow-400 text-center mt-1"></div>
+                    <div className="w-[600px] h-[3px] bg-yellow-400 text-center mt-1 mb-2"></div>
                 </div>
 
                 {/* Projects */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-3 mb-8">
                     {projects.map((project) => (
                         <motion.a
                             key={project.id}
@@ -127,7 +127,7 @@ function Work() {
                             viewport={{ once: true, amount: 0.7 }}
                             href={project.link}
                             target="_blank"
-                            className="relative group w-full h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg border-2 border-white"
+                            className="relative group w-full h-38 lg:h-40 overflow-hidden rounded-lg shadow-lg border-2 border-white"
                         >
                             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity"></div>
                             <img
